@@ -23,8 +23,6 @@ addUserbutton.addEventListener ('click', function() {
     let userunputValue = userInput.value
     userInput.value = ''
    
-       
-
         let personName = document.createElement ('div');
         personName.classList.add ('personname')
 
@@ -72,42 +70,57 @@ addUserbutton.addEventListener ('click', function() {
 
 // console.log(persone.children.length);
 
-
-   
-
-    
-
-    
-
 let table = document.createElement ('table')
     containerLesson.appendChild(table)
 
-let tr = document.createElement ('tr')
+
+    
+// ------------------------------------------------
+    var tr = document.createElement ('tr')
     tr.classList.add ('data')
+
+  
+    
+
+ addBtn.addEventListener ('click', function () {
+
+    
     table.appendChild(tr)
     
-    
-let trScore = document.createElement ('tr')
-    trScore.classList.add ('scores')
-    table.appendChild (trScore)
-    
-addBtn.addEventListener ('click', function () {
 
-    let th = document.createElement ('th')
+    var th = document.createElement ('th')
     th.textContent = 'mon 5 march'
     tr.appendChild (th)
-    
-    
-    let td = document.createElement ('td')
-    td.textContent = '0.00'
-    
 
-    for (let i = 0; i < tr.children.length; i++) {
-
+    for (let i = 0; i < persone.children.length; i++){
+        
+        var trScore = document.createElement ('tr')
+        trScore.classList.add ('scores')
+        var td = document.createElement ('td')
+        td.textContent = '0.00'
+        table.appendChild (trScore)
         trScore.appendChild (td);
+        
+        
     }
+
     
     
+   
+    
+    
+    
+    
+  
+    
+    
+        
+            
+    
+    
+    
+        
+            
     
     // for (let i = 0; i < persone.children.length; i++) {
     
